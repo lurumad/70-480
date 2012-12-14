@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -7,7 +7,7 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{A54988CA-442F-4A87-82DE-F89322DE845C}</ProjectGuid>
+    <ProjectGuid>{1FC6953A-3B49-41C6-AC14-2D7C50C30584}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -57,6 +57,16 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="about.htm" />
+    <Content Include="images\speakers\april-meyer.jpg" />
+    <Content Include="images\speakers\david-alexander.jpg" />
+    <Content Include="images\speakers\mark-hanson.jpg" />
+    <Content Include="images\speakers\melissa-kerr.jpg" />
+    <Content Include="images\sponsors\sponsor2.png" />
+    <Content Include="images\sponsors\sponsor3.png" />
+    <Content Include="images\sponsors\sponsor4.png" />
+    <Content Include="images\sponsors\sponsor5.png" />
+    <Content Include="images\sponsors\sponsor1.png" />
     <Content Include="index.htm" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -64,12 +74,14 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Web.Debug.config">
+    <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
-    </None>
-    <None Include="Web.Release.config">
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
-    </None>
+    </Content>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -86,7 +98,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>0</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:20715/</IISUrl>
+          <IISUrl>http://localhost:1106/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
